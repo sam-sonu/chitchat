@@ -1,0 +1,178 @@
+Training Nomination Module (Summary)
+
+
+
+
+            Training calendar topics should have a "Nominate Now " link .
+            Employee can nominate for a training and also withdraw from a training within timelines
+            Training waiting list managerment
+            Nomination request goes to manager for approval/rejection
+            If the training is approved , invite should go to the employee with information from the training details
+            If training is rejected by manager , mail should go to the employee with this information
+            All non actioned nominations should be actioned by L&D ( approve/Reject ) .
+            L&D should have the right to create and assign trainings that do not need an approval
+            Manager should be able to nominate team member(s) for the calendar training  and assign learning journeys
+
+
+
+
+Detailed Requirements :
+
+Nomination Module Employee :
+
+On the employee landing Page all the upcoming trainings / Programs planned by L&D should be visible. These should be sorted date wise. Eg. the nearest one to the current date should appear first .On the landing page, the employee should see 3-4 upcoming ones and when he/she clicks “View All”, all the planned ones should open up in a new page titled Learning Calendar. Just in front of the training / Program should be a link “Nominate Now “. Once the employee clicks on the link, a new window should open up which shows the number of remaining seats.
+
+In case all the seats are filled, the employee should still be able to nominate but a message should display “You have been added in the waitlist. In case there is a cancellation, you will receive the training invite else you will be notified when the next iteration is planned “.
+
+In case seats are available, the employee should be able to nominate and a message should be displayed “Your nomination request has been recorded. You will be invited to the training once your nomination is approved by your manager. To secure your spot, you may want to remind your manager to approve your nomination “
+
+On the employee landing page, all the trainings that the employee has nominated for / that have been assigned to him should be visible sorted date wise. Eg the nearest one to the current date should appear first. For the trainings nominated for by him/her, there should be a “Withdraw” option which allows the employee to cancel his nomination .This should be possible only till 4 working days prior to the training date.For trainings assigned to him by manager/L&D , withdraw option should NOT appear .
+
+Once the manager approves the nomination, it should go for confirmation to L&D admin. Once the admin confirms the nominations (bulk approval should be available), training invite should be sent to the employee.
+
+In case the manager or L&D admin rejects the nomination, a reason for rejection should be provided. A mail should be sent to the employee informing about the rejection and also the exact reason should be mentioned.
+
+In case an employee withdraws his/her nomination by clicking the “Withdraw” option, he/she needs to input the reason for withdrawal. This should again be approved /rejected by the manager. If the manager approves the withdrawal, a notification email should be sent to the employee and L&D admin and the nomination request of the next waitlisted employee should be processed for approvals and subsequently training invite should be sent.
+
+In case the manager does not action (approve/reject) the nominations, L&D admin should be able to action it (L&D admin will action all the pending nominations 4 days before the training date ).Once L&D actions the nomination a trigger should go to the manager as well as the employees .
+
+L&D admin should be able to check and view the waitlists of all the past trainings. There should be a visible flag /icon to indicate which trainings have a waitlist.
+
+Once the training is organized, employees should mark their attendance and feedback on GrowHive.
+
+
+
+
+Nomination Module Manager:
+
+ 
+
+On the nomination module Manager should have 3 major actions:
+
+Approve /Reject nomination requests
+Nominate team members for Calendar trainings/sessions
+Nominate team members for Programs /other trainings
+Approve /Reject nomination requests: Manager should be able to approve/reject the training request from team members.
+Manager should be able to nominate any of his/her team member for any training organized by L&D team. In this case a notification email should go to the employee mentioning that he/she has been nominated for the training ( training details should be mentioned ) by his manager. The training nomination should then be processed as per the workflow.
+Manager should be able to nominate any of his/her team member for any Programs (learning journeys) or other trainings available on GH (eg. SamsungU courses). These Programs can be created by manager in advance and can be reused eg. Fresher’s Onboarding Program etc. In this case a notification email should go to the employee mentioning that he/she has been nominated for the Program/training (details should be mentioned ) by his manager. The training nomination should then be processed as per the workflow. The manager should also assign an expected date of completion for the Program/training in case it is not a scheduled calendar training.
+
+
+
+
+Nomination Module L&D Admin:
+
+L&D admin should be able to view and review the nominations received for all trainings.
+L&D admin should approve/reject the nominations for trainings. After L&D admin approval training invites should be sent out.
+In case the manager does not action the nominations, L&D admin should be able to override and action the nominations.
+L&D admin should be able to assign trainings and Programs to all employees / selected employees (basis criteria) and tag trainings as “Mandatory”.
+L&D admin should be able to send out triggers for trainings (basis criteria).
+
+
+
+
+Training Creation Rights:
+
+As of now every employee can create trainings and Programs on GH. Can we have a flag that differentiates between L&D trainings and others?
+
+
+
+
+Training Creation:
+
+While creating a training on GH the following fields should be visible:
+
+Training Title
+Skill
+Required Proficiency
+Training Description/Agenda
+Date and Time
+Applicable to Level
+Training Mode
+Link/Location
+Attendees
+Other Attendees
+Co Author List
+Trainers
+L&D Training (only L&D admin should be able to see this flag). Selected ones would be part of SRI-D Calendar
+Training Type ( Onboarding /TLC/BLC/Project/Compliance etc. )
+Feedback Required ( Y/N )
+Mandatory Training ( Y/N )
+Open for Nomination (Y/N)
+Last date to nominate ( Nomination Date should be extendible )
+
+
+
+
+Landing Page :
+
+Functionalities
+
+	
+
+
+     Employee View:
+            Landing page should have user learning summary
+          Program Badges
+            Learning Calendar for current and upcoming month as per his/her level (Level to be   checked from DB eg.CL/TB).           
+
+           Training calendar topics should have a "Nominate Now” link.
+            Learning paths (Programs) for the employee
+            Mandatory Trainings
+            Training catalogue ( SamsungU trainings + L&D trainings )
+
+ 
+     Manager View :( for team and team members )
+            Review assigned learning path progress
+            Approve/Reject Training nomination
+            Skill badges of team members
+            Training catalogue ( SamsungU trainings + L&D trainings )
+             Delegate rights option .
+
+
+
+
+Employee View:
+
+When the employee opens GH Learning Management section, the first landing page should have summary of his Learnings for that year.
+
+It should include:
+
+the total number of training hours completed for the year
+the total number of trainings completed
+Certificates earned
+Badges earned
+
+On the employee landing Page all the upcoming trainings / Programs planned by L&D should be visible. These should be sorted date wise. Eg. the nearest one to the current date should appear first .On the landing page, the employee should see 3-4 upcoming ones and when he/she clicks “View All”, all the planned ones should open up in a new page titled Learning Calendar.
+
+On the employee landing page, all the trainings that the employee has nominated for / that have been assigned to him should be visible sorted date wise. Eg the nearest one to the current date should appear first.
+
+All the trainings where the feedback and attendance is due/pending should be visible.
+
+On the landing page there should be a section for Articles. These should be PDF files that are uploaded on GH by L&D team and are available for people to read on GH (not downloadable).L&D admin should be able to upload multiple documents at a time . However they can flag /spotlight a document that will be visible on the landing page.
+
+There should be a section for quiz/trivia. Quiz would be a question that’s asked and the employees can answer. Trivia is just a message / fun fact that is posted by L&D team . These are primarily to increase engagement .
+
+Manager View:
+
+     Manager View :( for team and team members )
+            Review assigned learning path progress
+            Approve/Reject Training nomination
+            Skill badges of team members
+            Training catalogue ( SamsungU trainings + L&D trainings )
+             Delegate rights option .
+
+The Manager should have a Team Overview Page. This page should give him a dashboard/summary of learnings of his/her team.
+
+Manager should be able to nominate any of his/her team member for any calendar training organized by L&D team. In this case a notification email should go to the employee mentioning that he/she has been nominated for the training ( training details should be mentioned ) by his manager. The training nomination should then be processed as per the workflow.
+
+Manager should be able to nominate any of his/her team member for any Programs (learning journeys) or other trainings available on GH (eg. SamsungU courses). These Programs can be created by manager in advance and can be reused eg. Fresher’s Onboarding Program etc. In this case a notification email should go to the employee mentioning that he/she has been nominated for the Program/training  (details should be mentioned ) by his manager. The training nomination should then be processed as per the workflow. The manager should also assign an expected date of completion for the Program/training in case it is not a scheduled calendar training.
+
+Manager should be able to view:
+
+All trainings nominations pending for approval for his/her team.
+Summary of learnings /trainings done by his/her team members.
+Learning Journeys available to be assigned.
+Status of learning Journeys assigned to his/her team members.
+Manager should be able to send a nudge/note to the team member basis his learning summary .
+
+
