@@ -1,0 +1,200 @@
+from app.common.sysobject.sqlquerybinder import SqlQueryParamsBinder
+from app.common.sysconstant.sysdbconst import DBTableConst
+
+class SqlMapper():
+    sql_binder = SqlQueryParamsBinder
+    
+    @classmethod
+    # def list_sql(cls,params):
+        
+    #     sql='''
+    #          SELECT 
+    #               r.id
+    #             , (SELECT z.title FROM sys_code z WHERE z.code=r.status_cd)  status
+    #             , CASE
+    #                     WHEN r.status_cd='status.draft' AND t.nomination_yn='Y' AND DATE(t.event_dt) > DATE(NOW())  THEN 'status.nomination.request'
+    #                     ELSE r.status_cd
+    #                 END status_cd 
+    #             , r.role_cd
+    #             , t.id training_id  
+    #             , t.title
+    #             , t.ref_link
+    #             , t.trainer_id                
+    #             , t.feedback_show_yn
+    #             , t.skill_id
+    #             , (SELECT z.title FROM skill z WHERE z.id=t.skill_id AND z.del_yn='N')  skill
+    #             , t.current_level_cd
+    #             , (SELECT z.title FROM sys_code z WHERE z.code=t.current_level_cd AND z.del_yn='N')  current_level_nm
+    #             , t.target_level_cd
+    #             , (SELECT z.title FROM sys_code z WHERE z.code=t.target_level_cd AND z.del_yn='N')  target_level_nm
+    #             , t.project_id
+    #             , DATE(t.event_dt) event_dt
+    #             , t.start_time 
+    #             , t.end_time  
+    #             , t.event_type_cd
+    #             , (SELECT z.title FROM sys_code z WHERE z.code=t.event_type_cd AND z.del_yn='N')  event_type
+    #             , t.location  
+                                
+    #             , CASE
+    #                     WHEN t.status_cd='status.draft' AND DATE(t.event_dt)= DATE(NOW())  THEN 'status.inprogress'
+    #                     WHEN t.status_cd='status.draft' AND DATE(t.event_dt) > DATE(NOW()) THEN 'status.upcoming'
+    #                     WHEN t.status_cd='status.draft' AND  DATE(NOW()) > DATE(t.event_dt) THEN 'status.action.awaiting'
+    #                     ELSE t.status_cd
+    #                 END training_status_cd         
+                
+    #             , (SELECT IF(t.status_cd='status.draft' AND DATE(t.event_dt)= DATE(NOW()),'InProgress'
+    #                         , IF(t.status_cd='status.draft' AND DATE(t.event_dt) > DATE(NOW()),'Upcoming'
+    #                             , IF(t.status_cd='status.draft' AND  DATE(NOW()) > DATE(t.event_dt) ,'Action Awaiting'
+    #                             , z.title ) )
+    #                         )  FROM sys_code z WHERE z.code=t.status_cd AND z.del_yn='N')  training_status
+
+    #              , (SELECT IF(t.status_cd='status.draft' AND DATE(t.event_dt)= DATE(NOW()),5
+    #                         , IF(t.status_cd='status.draft' AND DATE(t.event_dt)> DATE(NOW()),4
+    #                             , 0 )
+    #                         )  FROM sys_code z WHERE z.code=t.status_cd AND z.del_yn='N')  sno
+    #             , (SELECT COUNT(*) FROM content_training_member z WHERE z.training_id=t.id AND z.del_yn='N')  member_count
+    #         FROM 
+    #             content_training t
+    #             ,content_training_member r
+    #         WHERE 1=1
+    #             AND t.id = r.training_id                
+
+    #             {% if upcomingTrainingYn and feedbackShowYn %}
+    #                 AND r.status_cd NOT IN ('status.feedback.complete','status.reject','status.nomination.reject','status.reject')
+    #                 AND NOT (t.status_cd ='status.draft' AND DATE(t.event_dt) < DATE(NOW()))
+                    
+    #             {% elif mandatoryRequestYn %}
+    #                 AND t.status_cd = 'status.draft' 
+    #                 AND t.nomination_yn = 'N' 
+    #                 AND t.mandatory_yn = 'Y'
+    #                 AND r.status_cd IN ('status.draft', 'status.approval.request')
+    #                 AND DATE(t.event_dt) > DATE(NOW())
+                
+    #             {% elif assingedRequestYn %}
+    #                 AND t.status_cd = 'status.draft' 
+    #                 AND r.status_cd IN ('status.approved')
+    #                 AND DATE(t.event_dt) > DATE(NOW())
+                
+    #             {% elif  nominationRequesetYn %}
+    #                 AND t.status_cd='status.draft' 
+    #                 AND r.status_cd IN ('status.draft','status.approval.request') 
+    #                 AND t.nomination_yn='Y'
+    #                 AND  DATE(t.event_dt) > DATE(NOW())
+                    
+    #             {% elif upcomingTrainingYn %}
+    #                 AND t.status_cd='status.draft' 
+    #                 AND ( (r.status_cd ='status.draft' AND t.nomination_yn='N') OR r.status_cd ='status.approved' )
+    #                 AND  DATE(t.event_dt) > DATE(NOW())
+                    
+    #             {% else  %}          
+    #                 AND r.status_cd NOT IN ('status.feedback.complete','status.reject','status.nomination.reject','status.reject')
+    #                 AND t.status_cd NOT IN('status.draft')
+    #                 AND DATE(t.event_dt) < DATE(NOW())
+                
+    #             {% endif %}
+                
+    #              {% if feedbackShowYn %}
+    #                 AND t.feedback_show_yn = {{ feedbackShowYn }}
+    #             {% endif %}  
+                
+    #             {% if roleCd %}
+    #                 AND r.role_cd={{ roleCd }}                
+    #             {% endif %}
+
+    #             {% if userRelatedTrainingYn %}
+    #                 AND t.skill_id IN (SELECT z.skill_id FROM member_skill z WHERE z.member_id = {{ memberId }} AND z.del_yn='N')
+    #                 AND r.member_id != {{ memberId }} 
+    #             {% else %}        
+    #                 AND r.member_id= {{ memberId }}           
+    #             {% endif %}
+                
+    #             AND t.del_yn='N'
+    #             AND t.show_yn='Y'
+    #             AND r.del_yn='N'
+    #             ORDER BY sno DESC
+    #     '''        
+
+    #     return cls.sql_binder.prepare_sql(sql, params)
+    @classmethod
+    def list_sql(cls,params):
+        
+        sql='''
+             SELECT 
+                  r.id
+                , (SELECT z.title FROM sys_code z WHERE z.code=r.status_cd)  status
+                , CASE
+                        WHEN r.status_cd='status.draft' AND t.nomination_yn='Y' AND DATE(t.event_dt) > DATE(NOW())  THEN 'status.nomination.request'
+                        ELSE r.status_cd
+                    END status_cd 
+                , r.role_cd
+                , t.id training_id  
+                , t.title
+                , t.ref_link
+                , t.trainer_id                
+                , t.feedback_show_yn
+                , t.skill_id
+                , (SELECT z.title FROM skill z WHERE z.id=t.skill_id AND z.del_yn='N')  skill
+                , t.current_level_cd
+                , (SELECT z.title FROM sys_code z WHERE z.code=t.current_level_cd AND z.del_yn='N')  current_level_nm
+                , t.target_level_cd
+                , (SELECT z.title FROM sys_code z WHERE z.code=t.target_level_cd AND z.del_yn='N')  target_level_nm
+                , t.project_id
+                , DATE(t.event_dt) event_dt
+                , t.start_time 
+                , t.end_time  
+                , t.event_type_cd
+                , (SELECT z.title FROM sys_code z WHERE z.code=t.event_type_cd AND z.del_yn='N')  event_type
+                , t.location  
+                                
+                , CASE
+                        WHEN t.status_cd='status.draft' AND DATE(t.event_dt)= DATE(NOW())  THEN 'status.inprogress'
+                        WHEN t.status_cd='status.draft' AND DATE(t.event_dt) > DATE(NOW()) THEN 'status.upcoming'
+                        WHEN t.status_cd='status.draft' AND  DATE(NOW()) > DATE(t.event_dt) THEN 'status.action.awaiting'
+                        ELSE t.status_cd
+                    END training_status_cd         
+                
+                , (SELECT IF(t.status_cd='status.draft' AND DATE(t.event_dt)= DATE(NOW()),'InProgress'
+                            , IF(t.status_cd='status.draft' AND DATE(t.event_dt) > DATE(NOW()),'Upcoming'
+                                , IF(t.status_cd='status.draft' AND  DATE(NOW()) > DATE(t.event_dt) ,'Action Awaiting'
+                                , z.title ) )
+                            )  FROM sys_code z WHERE z.code=t.status_cd AND z.del_yn='N')  training_status
+
+                 , (SELECT IF(t.status_cd='status.draft' AND DATE(t.event_dt)= DATE(NOW()),5
+                            , IF(t.status_cd='status.draft' AND DATE(t.event_dt)> DATE(NOW()),4
+                                , 0 )
+                            )  FROM sys_code z WHERE z.code=t.status_cd AND z.del_yn='N')  sno
+                , (SELECT COUNT(*) FROM content_training_member z WHERE z.training_id=t.id AND z.del_yn='N')  member_count
+            FROM 
+                content_training t
+                ,content_training_member r
+            WHERE 1=1
+                AND t.id = r.training_id    
+                {% if roleCd %}
+                    AND r.role_cd={{ roleCd }}                
+                {% endif %}
+
+                {% if userRelatedTrainingYn %}
+                    AND t.skill_id IN (SELECT z.skill_id FROM member_skill z WHERE z.member_id = {{ memberId }} AND z.del_yn='N')
+                    AND r.member_id != {{ memberId }} 
+                {% else %}        
+                    AND r.member_id= {{ memberId }}           
+                {% endif %}
+    
+                AND (
+				CASE
+					WHEN t.status_cd='status.draft' AND DATE(t.event_dt)= DATE(NOW()) THEN 'status.inprogress'
+					WHEN t.status_cd='status.draft' AND DATE(t.event_dt) > DATE(NOW()) THEN 'status.upcoming'
+					WHEN t.status_cd='status.draft' AND DATE(NOW()) > DATE(t.event_dt) THEN 'status.action.awaiting'
+                    When r.status_cd NOT IN ('status.feedback.complete','status.reject','status.nomination.reject','status.reject') AND t.status_cd NOT IN('status.draft') AND DATE(t.event_dt) < DATE(NOW()) THEN 'status.feedback.request'
+					ELSE t.status_cd
+				END
+			        ) = {{reuqestStatus}}
+           
+                AND t.del_yn='N'
+                AND t.show_yn='Y'
+                AND r.del_yn='N'
+                ORDER BY sno DESC
+
+        '''        
+        print(sql)
+        return cls.sql_binder.prepare_sql(sql, params)

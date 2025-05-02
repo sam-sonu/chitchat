@@ -1,2 +1,13 @@
 Angular rec coures
 https://www.youtube.com/watch?v=CGLdH5ORX-Y
+
+
+
+
+
+NO	Classification	Language	Course Name	Course ID	Training Hours
+242	Leadership	English (US)	11 Inactions that Ruin a Leader's Reputation	ec3d3853-2a03-5807-b430-691e3f040331	0.82
+243	Leadership	English (US)	15 Questions to Ask before Hiring a Lawyer	0d05563e-bde4-5b75-917e-96430ccd4bd3	0.43
+244	Leadership	English (US)	A Modern Guide to Strategy Implementation	4dcdb065-8573-574a-a638-96d7667d6e8b	0.8
+245	Leadership	English (US)	Accountability for Leaders: Navigating Diversity, Equity, and Inclusion	b5c9e6c9-ee37-5d5c-abb3-c96674e33fb6	0.78
+246	Leadership	English (US)	Arianna Huffington's Thrive 03: Setting Priorities and Letting Go	cf9c98cf-2291-544e-98d0-ecb48ec8f0cc	0.73
