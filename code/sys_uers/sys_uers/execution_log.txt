@@ -1,0 +1,2172 @@
+Execution Log - 2025-06-12 12:16:40
+==================================================
+
+[2025-06-12 12:16:40] Fetching data from database...
+[2025-06-12 12:16:41] MySQL connection is closed
+[2025-06-12 12:16:41] Data successfully saved to c:\Users\sonu.km\Desktop\basefile\sql_py_reader_bot\report-bot\sys_uers\sys_uers\sys_users.tsv
+[2025-06-12 12:16:41] Fetching data from API...
+[2025-06-12 12:16:42] Data successfully saved to c:\Users\sonu.km\Desktop\basefile\sql_py_reader_bot\report-bot\sys_uers\sys_uers\emp_api.tsv
+[2025-06-12 12:16:42] 
+Processing data and generating reports...
+[2025-06-12 12:16:42] 
+=== INITIAL COUNTS ===
+[2025-06-12 12:16:42] Total employees in emp_api (before processing): 2171
+[2025-06-12 12:16:42] Total employees in sys_users: 2519
+[2025-06-12 12:16:42] Data successfully saved to c:\Users\sonu.km\Desktop\basefile\sql_py_reader_bot\report-bot\sys_uers\sys_uers\removed_partner_users.tsv
+[2025-06-12 12:16:42] Data successfully saved to c:\Users\sonu.km\Desktop\basefile\sql_py_reader_bot\report-bot\sys_uers\sys_uers\new_employees.tsv
+[2025-06-12 12:16:42] Data successfully saved to c:\Users\sonu.km\Desktop\basefile\sql_py_reader_bot\report-bot\sys_uers\sys_uers\common_employees.tsv
+[2025-06-12 12:16:42] Data successfully saved to c:\Users\sonu.km\Desktop\basefile\sql_py_reader_bot\report-bot\sys_uers\sys_uers\exited_employees.tsv
+[2025-06-12 12:16:42] 
+=== REPORT SUMMARY ===
+[2025-06-12 12:16:42] Removed partner users: 328 (saved to removed_partner_users.tsv)
+[2025-06-12 12:16:42] Remaining users after filtering: 1843
+[2025-06-12 12:16:42] New employees (not in sys_users): 214 (saved to new_employees.tsv)
+[2025-06-12 12:16:42] Common employees (in both files): 1629 (saved to common_employees.tsv)
+[2025-06-12 12:16:42] Exited employees (in sys_users but not emp_api): 890 (saved to exited_employees.tsv)
+[2025-06-12 12:16:42] 
+Checking existence of new employees in database...
+[2025-06-12 12:16:43] Data successfully saved to c:\Users\sonu.km\Desktop\basefile\sql_py_reader_bot\report-bot\sys_uers\sys_uers\existence_check_results.tsv
+[2025-06-12 12:16:43] Existence check results saved to existence_check_results.tsv
+[2025-06-12 12:16:43] 
+Automatically processing new employees...
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Monu Rawat', 'monu.r24', '24525131', 'monu.r24', '24525131', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Divyanshu Mishra', 'divyanshu.m2', '24526449', 'divyanshu.m2', '24526449', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Amit Sharma', 'amit.s', '04702561', 'amit.s', '04702561', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Rahul Gupta', 'rahul.g', '04733475', 'rahul.g', '04733475', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.partlead', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Prince Rakholiya', 'p.rakholiya', '24517879', 'p.rakholiya', '24517879', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Nelson Rahul Tigga', 'rahul.tigga', '24517864', 'rahul.tigga', '24517864', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Praveenya Gopaiahgari', 'g.praveenya', '06680064', 'g.praveenya', '06680064', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.partlead', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('PRIYABRATA DAS', 'priyabrata.d', '08520608', 'priyabrata.d', '08520608', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.partlead', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Nishchay Hasija', 'n.hasija', '24517926', 'n.hasija', '24517926', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Rishabh Khanna', 'rishabh.k11', '24517950', 'rishabh.k11', '24517950', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Tanweer Alam', 'tanweer.alam', '05638448', 'tanweer.alam', '05638448', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.partlead', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Prudhvi Raj Vasireddi', 'prudhvi.raj', '06680053', 'prudhvi.raj', '06680053', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.partlead', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Vivek Singh', 'singh.vivek', '08532034', 'singh.vivek', '08532034', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Gaurav Jindal', 'gaurav.j', '04676908', 'gaurav.j', '04676908', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('AMI PRAKASH ASTHANA', 'prakash.a', '08614946', 'prakash.a', '08614946', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('BHAVANI MADIRAJU', 'bhavani.m', '07669332', 'bhavani.m', '07669332', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Prajyoti Tewari', 'p.tewari', '24520431', 'p.tewari', '24520431', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Sandeep Kumar', 'sandeep.k11', '06679976', 'sandeep.k11', '06679976', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.partlead', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Mrunal Sovani', 'mrunal.s', '05639054', 'mrunal.s', '05639054', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('JITENDRA RAMDAS JADHAV', 'jitendra.j', '09522971', 'jitendra.j', '09522971', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Deepak Jain', 'deepak.jain', '08516167', 'deepak.jain', '08516167', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('BHARAT BHUSHAN', 'b.bharat', '08521282', 'b.bharat', '08521282', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('SHILPA CHAUDHARY', 'shilpa.c', '09500945', 'shilpa.c', '09500945', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('P SUJITH KUMAR', 'sujith.k', '08500609', 'sujith.k', '08500609', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Naresh Kumar Eddlakadi Yadu', 'naresh.k1', '08500604', 'naresh.k1', '08500604', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Ashutosh Chauhan', 'ashutosh.c', '08583571', 'ashutosh.c', '08583571', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Kaustubh Reet', 'k.reet', '24517913', 'k.reet', '24517913', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('ABHAYSINGH LAYAKSINGH CHAVAN', 'abhays.lsc', '08656299', 'abhays.lsc', '08656299', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Suvajit Mishra', 'suvajit.m', '08676731', 'suvajit.m', '08676731', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Akhilesh Kumar', 'akhilesh.k', '08552849', 'akhilesh.k', '08552849', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Shashank Yadav', 'shashank.y', '24517904', 'shashank.y', '24517904', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Rai Ramya Sree', 'ramya.sree', '24516445', 'ramya.sree', '24516445', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Kotha Sudheer', 'sudheer.k1', '24520318', 'sudheer.k1', '24520318', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Saurabh Kumar', 'saurabh.kum', '24523112', 'saurabh.kum', '24523112', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Nitin Jhanwar', 'nitin.j', '04728045', 'nitin.j', '04728045', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.grouphead', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Soni Jose Koshy', 'soni.koshy', '05519573', 'soni.koshy', '05519573', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.grouphead', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Sheetal Sharma', 'sheetal.arya', '03652797', 'sheetal.arya', '03652797', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.partlead', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Ashwani Sharma', 'ashwani.s', '04707953', 'ashwani.s', '04707953', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.partlead', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Vikas Yadav', 'vikas.yadav', '07620317', 'vikas.yadav', '07620317', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Adarsh Kumar Rawat', 'adarsh.rawat', '07668748', 'adarsh.rawat', '07668748', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.partlead', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('DEEPAK SHARMA', 'deepak.s3', '09531147', 'deepak.s3', '09531147', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.partlead', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('AMIT SHARMA', 'amit.s1', '08522930', 'amit.s1', '08522930', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Pranshu Saraf', 'pranshu.s', '24517971', 'pranshu.s', '24517971', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Dalvinder Singh', 'dalvinder.s', '08612279', 'dalvinder.s', '08612279', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('AMIT KUMAR SHAHI', 'amit.shahi', '07559231', 'amit.shahi', '07559231', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Anuj Agarwal', 'agarwal.anuj', '08536525', 'agarwal.anuj', '08536525', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Sudhanshu Arya', 's.arya', '24519705', 's.arya', '24519705', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Lalit Mohan Tripathi', 'lalit.mohan', '03652628', 'lalit.mohan', '03652628', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Subhash Chandra', 'subhash.c', '08500587', 'subhash.c', '08500587', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('GURDEV SINGH', 'gurdev.s', '08524850', 'gurdev.s', '08524850', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Smita Godbole', 'smita.g', '06651383', 'smita.g', '06651383', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('SHASHI KANT SRIVASTAVA', 'shashikant.s', '07823349', 'shashikant.s', '07823349', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('NIKHIL VERMA', 'nikhil.v', '09527700', 'nikhil.v', '09527700', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Sankalp Jain', 'sankalp.jain', '24517947', 'sankalp.jain', '24517947', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Alok Raj', 'alok.r1', '24517870', 'alok.r1', '24517870', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('AMIT KUMAR', 'k.amit1', '08524853', 'k.amit1', '08524853', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Amit Agarwal', 'agarwal.amit', '07664702', 'agarwal.amit', '07664702', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Ashish Ranjan', 'ashish.r2', '24517871', 'ashish.r2', '24517871', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Vision Aggarwal', 'vision.ag', '24517972', 'vision.ag', '24517972', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Naveen Yadav', 'naveen.yadav', '03645463', 'naveen.yadav', '03645463', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.grouphead', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Rishi Agrawal', 'rishi.a', '05729577', 'rishi.a', '05729577', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.grouphead', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('SUMIT PANWAR', 'sumit.panwar', '09521578', 'sumit.panwar', '09521578', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.grouphead', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('AVINASH SINGH', 's.avinash', '09534968', 's.avinash', '09534968', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.partlead', 'N', 'SRI-D')
+[2025-06-12 12:16:43] Successfully inserted record
+---
+
+[2025-06-12 12:16:43] Executing SQL:
+[2025-06-12 12:16:43] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:43] With parameters:
+[2025-06-12 12:16:43] ('Devendra Khandelwal', 'devendra.k', '07702514', 'devendra.k', '07702514', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:43', 61, '2025-06-12 12:16:43', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Akanksha Dubey', 'd.akanksha', '25502527', 'd.akanksha', '25502527', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('HORAM LEE', 'horam.lee', '17043640', 'horam.lee', '17043640', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('YONGJUN KIM', 'chest.kim', '96798526', 'chest.kim', '96798526', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.teamhead', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('SERL AHN', 'serl.ahn', '10192253', 'serl.ahn', '10192253', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.expat', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Hemanshu Srivastava', 'hemanshu.s', '04734387', 'hemanshu.s', '04734387', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.teamhead', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Pankaj Mishra', 'pankaj.m', '05557960', 'pankaj.m', '05557960', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.teamhead', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Amit Kumar Jaiswal', 'amit.jaiswal', '04728181', 'amit.jaiswal', '04728181', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.teamhead', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Ankit Jalota', 'ankit.jalota', '05630308', 'ankit.jalota', '05630308', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.teamhead', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Avnish Jain', 'avnish.jain', '07531886', 'avnish.jain', '07531886', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.teamhead', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Disha Tyagi', 'disha.tyagi', '25502130', 'disha.tyagi', '25502130', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Tushar Sharma', 'tushar.s2', '25502129', 'tushar.s2', '25502129', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Tanya Singh', 'tanya.singh', '25502218', 'tanya.singh', '25502218', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Saurabh Jaiswal', 'saurabh.js', '24517931', 'saurabh.js', '24517931', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('PALLAW KUMAR RAI', 'pallaw.rai', '06747020', 'pallaw.rai', '06747020', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.partlead', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('RANDEEP SINGH', 'randeep.s', '08524839', 'randeep.s', '08524839', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.partlead', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('SUDHANSU SEKHAR SUTAR', 'sutar.s', '08717962', 'sutar.s', '08717962', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Prashanth Kumar Prasadam', 'prasadam.p', '08530205', 'prasadam.p', '08530205', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Nitin Patney', 'nitin.patney', '05599111', 'nitin.patney', '05599111', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.grouphead', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Anurag Agarwal', 'anurag.a', '08755780', 'anurag.a', '08755780', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Abhijit Vats', 'abhijit.vats', '07670282', 'abhijit.vats', '07670282', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('KRISHNA KISHORE NERAVATI', 'krishna.k1', '09538683', 'krishna.k1', '09538683', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.partlead', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Mohammad Azam', 'm.azam', '06680075', 'm.azam', '06680075', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.grouphead', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Alok Dwivedi', 'alok.dwivedi', '04718687', 'alok.dwivedi', '04718687', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.grouphead', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Amit Sahrawat', 'a.sahrawat', '07823350', 'a.sahrawat', '07823350', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.grouphead', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Meenakshi Srivastava', 'meenakshi.s', '07798370', 'meenakshi.s', '07798370', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.partlead', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Amit Kumar', 'amit.tandial', '08557515', 'amit.tandial', '08557515', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.partlead', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('S J DHEERAJ REDDY', 'dheeraj.sj', '08500611', 'dheeraj.sj', '08500611', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Utkarsh Srivastava', 'utkarsh.s1', '24517844', 'utkarsh.s1', '24517844', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Silla Vineeth', 's.vineeth', '24517829', 's.vineeth', '24517829', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Yeshpal Singh', 's.yashpal', '07622595', 's.yashpal', '07622595', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Mohit Goel', 'mohit.goel', '08524241', 'mohit.goel', '08524241', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('ANKUR JAIN', 'jain.a', '09527654', 'jain.a', '09527654', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Amit Gupta', 'gupta.amit', '05557971', 'gupta.amit', '05557971', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.partlead', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Prateek', 'prateek.s2', '24517711', 'prateek.s2', '24517711', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Niharika Mahajan', 'n.mahajan', '24517877', 'n.mahajan', '24517877', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Sumit Diwaker', 's.diwaker', '24507647', 's.diwaker', '24507647', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Har Avikal', 'avikal.s', '24515759', 'avikal.s', '24515759', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('SACHIN DEV SHARMA', 'sachin.dev', '09502419', 'sachin.dev', '09502419', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.teamhead', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Siddhartha Shekhar', 'sid.shekhar', '24517909', 'sid.shekhar', '24517909', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Priyanshi Sharma', 'priyanshi.s', '24515437', 'priyanshi.s', '24515437', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Ashwini Kumar Shinde', 'ak.shinde', '24518231', 'ak.shinde', '24518231', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.grouphead', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Vedanth Powar', 'v.powar', '24517856', 'v.powar', '24517856', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Pankaj Meena', 'pankaj.meena', '24517868', 'pankaj.meena', '24517868', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Gaurav Mahajan', 'mahajan.g', '06680019', 'mahajan.g', '06680019', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.grouphead', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('AMBER MAHESHWARI', 'amber.m', '06651394', 'amber.m', '06651394', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.grouphead', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Amit Jain', 'amit.jain83', '06651430', 'amit.jain83', '06651430', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.partlead', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Dhirender Kumar', 'dhirender.k', '08511481', 'dhirender.k', '08511481', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.partlead', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('SAURABH JAIN', 'j.saurabh', '09518061', 'j.saurabh', '09518061', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.grouphead', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Deepak Purohit', 'deepak.puro', '08537686', 'deepak.puro', '08537686', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.grouphead', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('ASHIM SINGH SHAH', 'ashim.shah', '06680020', 'ashim.shah', '06680020', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.partlead', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Dauram Meghwal', 'dauram.m', '07860244', 'dauram.m', '07860244', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.partlead', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Virender Sharma', 'virender.s', '03645452', 'virender.s', '03645452', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.partlead', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Ashok Jain', 'ashok.jain', '05534565', 'ashok.jain', '05534565', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.partlead', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Yachna Chawla', 'yachna.ar', '08657656', 'yachna.ar', '08657656', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('MANOJ KUMAR VARSHNEY', 'manoj.v', '07616797', 'manoj.v', '07616797', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Avnish Tripathi', 'tripathi.avi', '24517828', 'tripathi.avi', '24517828', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Shivani Lohiya', 's.lohiya', '24517944', 's.lohiya', '24517944', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('MANEESH KUMAR SHRIVASTAVA', 'maneesh.ks', '07842673', 'maneesh.ks', '07842673', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Sumit Aggarwal', 'aggarwal.s', '08531542', 'aggarwal.s', '08531542', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Karan Parihar', 'k.parihar', '24517606', 'k.parihar', '24517606', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Vanshika Goyal', 'vanshika.g3', '25513777', 'vanshika.g3', '25513777', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Ayush Rawat', 'ayush.rawat', '25513832', 'ayush.rawat', '25513832', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Harsh Goyal', 'hars.goyal', '25513843', 'hars.goyal', '25513843', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Aman Saxena', 'aman.saxena', '25513840', 'aman.saxena', '25513840', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Khushi Aggarwal', 'khushi.agl', '25513841', 'khushi.agl', '25513841', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Parth Ahuja', 'parth.ahuja', '25513842', 'parth.ahuja', '25513842', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Yogesh Kumar', 'yog.kumar', '25513844', 'yog.kumar', '25513844', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Akshit Gulyan', 'a.gulyan', '25513850', 'a.gulyan', '25513850', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Sonali Gupta', 'sonali.g2', '25513795', 'sonali.g2', '25513795', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Sujal Chauhan', 'sujal.ch', '25513797', 'sujal.ch', '25513797', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Vineet Pandey', 'v.pandey', '25513798', 'v.pandey', '25513798', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Ravi Shankar Tripathi', 'rs.tripathi', '25513799', 'rs.tripathi', '25513799', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Hardik Jaiswal', 'hardik.j1', '25513801', 'hardik.j1', '25513801', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Yatharth Singh', 'yatharth.s2', '25513816', 'yatharth.s2', '25513816', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Keshav Bajpai', 'keshav.b', '25513810', 'keshav.b', '25513810', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Shreya Sahu', 'shreya.sahu', '25513775', 'shreya.sahu', '25513775', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Utkarsh Singh', 'utkarsh.s2', '25513791', 'utkarsh.s2', '25513791', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Aryan Dixit', 'aryan.dixit', '25513789', 'aryan.dixit', '25513789', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Bhavya Negi', 'bhavya.n', '25513779', 'bhavya.n', '25513779', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Amrit Anand', 'amrit.anand', '25513781', 'amrit.anand', '25513781', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Tanu Singhal', 'tanu.singhal', '25513784', 'tanu.singhal', '25513784', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Shubhangi Singh', 'shubhangi.s3', '25513787', 'shubhangi.s3', '25513787', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Purnima Sachan', 'purnima.s1', '25513790', 'purnima.s1', '25513790', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Aqdas Zishan', 'aqdas.zishan', '25513783', 'aqdas.zishan', '25513783', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:44] Successfully inserted record
+---
+
+[2025-06-12 12:16:44] Executing SQL:
+[2025-06-12 12:16:44] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:44] With parameters:
+[2025-06-12 12:16:44] ('Karan Chhillar', 'karan.ch', '25513847', 'karan.ch', '25513847', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:44', 61, '2025-06-12 12:16:44', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Kapil Kumar Singh', 'kapil.sk', '25513848', 'kapil.sk', '25513848', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Ronak Saraswat', 'ronak.s2', '25513786', 'ronak.s2', '25513786', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Deepti Rajput', 'deepti.r2', '25513793', 'deepti.r2', '25513793', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Tanisha Mangla', 't.mangla', '25513785', 't.mangla', '25513785', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Kashish Agrawal', 'kashish.ag', '25513788', 'kashish.ag', '25513788', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Yash Vardhan Singh', 'yash.v1', '25513830', 'yash.v1', '25513830', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Shivam Kumar Manjhi', 'shivam.m', '25513846', 'shivam.m', '25513846', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Raghav Dixit', 'raghav.dixit', '25513831', 'raghav.dixit', '25513831', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Rohil Chaturvedi', 'rohil.c1', '25513835', 'rohil.c1', '25513835', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Shivesh Nandan', 'shivesh.n', '25513833', 'shivesh.n', '25513833', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Anuj Bansal', 'anuj.bansal', '25513838', 'anuj.bansal', '25513838', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Himanshu Gupta', 'him.gupta', '25513837', 'him.gupta', '25513837', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Kavish Gupta', 'kavish.gupta', '25513839', 'kavish.gupta', '25513839', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Sagar Bhatt', 'sagar.bhatt', '25513802', 'sagar.bhatt', '25513802', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Sourav Kumar Bhunia', 'sourav.b', '25513803', 'sourav.b', '25513803', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Sagar Prakash Chaudhari', 'sagar.pc', '25508467', 'sagar.pc', '25508467', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Ayush Yadav', 'ayu.yadav', '25513807', 'ayu.yadav', '25513807', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Amit Kumar Ojha', 'a.ojha', '25513808', 'a.ojha', '25513808', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Jayant Thakur', 'jayant.th', '25513811', 'jayant.th', '25513811', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Sukant Gupta', 'sukant.g', '25513817', 'sukant.g', '25513817', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Manomay Singh', 'manomay.s1', '25513814', 'manomay.s1', '25513814', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Muskan Motwani', 'muskan.m1', '25513815', 'muskan.m1', '25513815', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Tanushree Gupta', 'tanu.g', '25513818', 'tanu.g', '25513818', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Ankita Khokhar', 'a.khokhar', '25513819', 'a.khokhar', '25513819', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Nitin Kumar Tiwari', 'nitin.kt', '25513823', 'nitin.kt', '25513823', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Aanya Singh', 'aanya.singh', '25513824', 'aanya.singh', '25513824', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Algin Shaji', 'algin.shaji', '25513828', 'algin.shaji', '25513828', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Deepak Singh', 'singh.d1', '25513825', 'singh.d1', '25513825', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Abhinav Kumar Kanth', 'abhi.kanth', '25513827', 'abhi.kanth', '25513827', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Priyanshi Tiwari', 'priya.t1', '25513826', 'priya.t1', '25513826', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Vritika', 'vritika.s', '24515758', 'vritika.s', '24515758', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Jai Kumar', 'jai1.kumar', '24517607', 'jai1.kumar', '24517607', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Vipin Dahiya', 'vipin.dahiya', '25514426', 'vipin.dahiya', '25514426', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Sunita Saxena', 'reception.sridelhi', '90003365', 'reception.sridelhi', '90003365', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Himani Mer', 'himani.m1', '25513809', 'himani.m1', '25513809', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Gagan Deep Singh', 'gagan.ds', '25513806', 'gagan.ds', '25513806', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Aditya', 'aditya.a11', '25513820', 'aditya.a11', '25513820', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Dhruv Mehrotra', 'm.dhruv', '25513821', 'm.dhruv', '25513821', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Aman Raj Singh', 'aman.raj', '25513822', 'aman.raj', '25513822', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Anviksha Singh', 'anviksha.s', '25513792', 'anviksha.s', '25513792', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Dhruv Mishra', 'dhruv.m2', '25513794', 'dhruv.m2', '25513794', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Varun Gupta', 'varun.gp', '25513800', 'varun.gp', '25513800', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('VISHAL BHATNAGAR', 'vishal.b', '09536852', 'vishal.b', '09536852', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Vikas Chauhan', 'v.chauhan', '04734876', 'v.chauhan', '04734876', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Botu Pradeep Kumar', 'pradeep.botu', '06680097', 'pradeep.botu', '06680097', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Nishant Sinha', 'nishant.y08', '08552838', 'nishant.y08', '08552838', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Siddhant Kumar', 'siddhant.k', '24517951', 'siddhant.k', '24517951', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('JINOY GEORGE', 'jinoy.george', '08612280', 'jinoy.george', '08612280', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.grouphead', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Lavudya Preethi', 'l.preethi', '24517898', 'l.preethi', '24517898', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Anish Jain', 'anish.j', '24517886', 'anish.j', '24517886', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Sushil Kapoor', 'sushil.k', '07685269', 'sushil.k', '07685269', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Transport', 'transport.srid', '99999993', 'transport.srid', '99999993', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Gosula Satya Prasanth', 'gs.satya', '25515773', 'gs.satya', '25515773', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('SunHyung Kim', 'jandarc', '97183783', 'jandarc', '97183783', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Sonu Saish', 's.saish', '24510768', 's.saish', '24510768', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Aayushi Khanna', 'aayushi.k', '24514587', 'aayushi.k', '24514587', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Nabeel Fayaz', 'nabeel.fayaz', '24515352', 'nabeel.fayaz', '24515352', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Rahul Patnaik', 'rahul.pk1', '24516453', 'rahul.pk1', '24516453', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Abhishek Kumar Tripathi', 'abhishek.kt1', '24516501', 'abhishek.kt1', '24516501', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Mohammad Umair Alam', 'umair.alam', '24516506', 'umair.alam', '24516506', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Divyesh Gautam', 'divyesh.g', '24517609', 'divyesh.g', '24517609', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Vipul Kapur', 'vipul.kapur', '24520277', 'vipul.kapur', '24520277', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Sushmita Rout', 's.rout', '24520432', 's.rout', '24520432', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Deepti Singh', 'deepti.s2', '24520468', 'deepti.s2', '24520468', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] Executing SQL:
+[2025-06-12 12:16:45] 
+    INSERT INTO sys_user(title, code, emp_no, knox_id, password, pid, parent_id, admin_yn, sno, status_cd, obj_cd, del_yn, modifier_id, modify_dt, creator_id, create_dt, gender, role_cd, download_permission_yn, user_type)
+    VALUES (%s, %s, %s, %s, getHashPassword(%s), %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    
+[2025-06-12 12:16:45] With parameters:
+[2025-06-12 12:16:45] ('Parminder Kaur', 'parminder.k', '24520469', 'parminder.k', '24520469', 0, 0, 'N', 0, 'sysuser.new', 'sysuser', 'N', 0, '2025-06-12 12:16:45', 61, '2025-06-12 12:16:45', '', 'user.role.engg', 'N', 'SRI-D')
+[2025-06-12 12:16:45] Successfully inserted record
+---
+
+[2025-06-12 12:16:45] MySQL connection closed.

@@ -1,0 +1,143 @@
+title	code	project_level
+ACR Data Processing Part	acr.data.processing.part	part
+AI Assistants Part	ai.assistants.part	part
+AV Core Part	av.core.part	part
+AV Product Group	av.product.group	group
+AV Solutions Part	av.solutions.part	part
+Ad Platform Service Team	ad.platform.service.team	team
+Ad platform Service Team	ad.platform.service.team	team
+AdOps Part	adops.part	part
+AdOps Service Group	adops.service.group	group
+Adops Service Group	adops.service.group	group
+Advance S/W Group	advance.s.w.group	group
+Advance SW Group	advance.sw.group	group
+Application Quality Group	application.quality.group	group
+Application S/W Team	application.s.w.team	team
+Base Platform Part	base.platform.part	part
+BigData Processing Part	bigdata.processing.part	part
+Broadcast MW Part	broadcast.mw.part	part
+Business Management Group	business.management.group	group
+CAS Part	cas.part	part
+CTO Team	cto.team	team
+Cloud Infra Part	cloud.infra.part	part
+Cloud Platform Team	cloud.platform.team	team
+Cloud Security Part	cloud.security.part	part
+Cloud Service Team	cloud.service.team	team
+Cloud service Team	cloud.service.team	team
+Cognitive Solution Group	cognitive.solution.group	group
+Computing Solutions Part	computing.solutions.part	part
+Connectivity Part	connectivity.part	part
+Content Assets Services Part	content.assets.services.part	part
+Content Discovery Services Part	content.discovery.services.part	part
+Content Engineering Part	content.engineering.part	part
+Content Quality Part	content.quality.part	part
+Content Streaming Services Part	content.streaming.services.part	part
+Convergence S/W Group	convergence.s.w.group	group
+Core S/W Group	core.s.w.group	group
+DA Mobile SW Part	da.mobile.sw.part	part
+DA Product Apps Part	da.product.apps.part	part
+DA Product Quality Part	da.product.quality.part	part
+DA RT Middleware Part	da.rt.middleware.part	part
+DA RT Product Part	da.rt.product.part	part
+DA Service Apps Part	da.service.apps.part	part
+DA Solutions Group	da.solutions.group	group
+Data Platform Group	data.platform.group	group
+Data Visualization	data.visualization	
+Data Visualization Part	data.visualization.part	part
+Device Feature Services Part	device.feature.services.part	part
+Device Intelligence Group	device.intelligence.group	group
+Device Solutions Group	device.solutions.group	group
+Echo System Part	echo.system.part	part
+Enterprise Applications Part	enterprise.applications.part	part
+Enterprise Device Platform Part	enterprise.device.platform.part	part
+Enterprise OSU Part	enterprise.osu.part	part
+Enterprise Platform Group	enterprise.platform.group	group
+Enterprise Product Group	enterprise.product.group	group
+Enterprise S/W Team	enterprise.s.w.team	team
+Enterprise Server Solutions Part	enterprise.server.solutions.part	part
+Enterprise Solutions Group	enterprise.solutions.group	group
+Enterprise Tech. Consulting & Pre-Sales Part	enterprise.tech.consulting..pre.sales.part	part
+F&A	f.a	
+Family Hub	family.hub	
+Feature Quality Part	feature.quality.part	part
+Front Platform Part	front.platform.part	part
+Graphics Part	graphics.part	part
+Head Of R&D Center	head.of.r.d.center	
+Hospitality Part	hospitality.part	part
+IOT Middleware Part	iot.middleware.part	part
+IOT-SmartThings Part	iot.smartthings.part	part
+IP & Strategy Part	ip..strategy.part	part
+ISD	isd	
+ISD Department	isd.department	
+Information Security	information.security	
+Infra & Security Group	infra..security.group	group
+Intelligence S/W Team	intelligence.s.w.team	team
+Intelligent Data Solutions Part	intelligent.data.solutions.part	part
+International Assignment(VD)	international.assignment.vd	
+Inventory Management	inventory.management	
+Kitchen AI Part	kitchen.ai.part	part
+Legal & Compliance	legal..compliance	
+Licensing Part	licensing.part	part
+Local & Emerging Services Part	local..emerging.services.part	part
+MDE Part	mde.part	part
+MFI-DA Part	mfi.da.part	part
+MFI-VD Part	mfi.vd.part	part
+New Biz Solutions Part	new.biz.solutions.part	part
+OS & System MW Part	os..system.mw.part	part
+PMO Part	pmo.part	part
+PVOD Part	pvod.part	part
+People Group	people.group	group
+People Partners	people.partners	
+People Partners - Business	people.partners..business	
+People Services	people.services	
+Platform Dev Group	platform.dev.group	group
+Platform Quality Part	platform.quality.part	part
+Platform S/W Team	platform.s.w.team	team
+Process Innovation Part	process.innovation.part	part
+Procurement	procurement	
+Product Intelligence Part	product.intelligence.part	part
+Product Quality Group	product.quality.group	group
+Product S/W R&D Lab	product.s.w.r.d.lab	
+Product S/W Team	product.s.w.team	team
+QA & Training Part	qa..training.part	part
+Quality Innovation Part	quality.innovation.part	part
+R&D Strategy Group	r.d.strategy.group	group
+RTL IP Design & Verification Part	rtl.ip.design..verification.part	part
+Release Engineering Part	release.engineering.part	part
+Reliability Engineering Part	reliability.engineering.part	part
+Robot Apps Part	robot.apps.part	part
+Robotics Part	robotics.part	part
+S/W Quality Team	s.w.quality.team	team
+SE Group	se.group	group
+Samsung R&D Institute India - Delhi [IA Home]	samsung.r.d.institute.india..delhi.ia.home	
+Screen Experience Part	screen.experience.part	part
+Security Part	security.part	part
+Sensing AI Part	sensing.ai.part	part
+Service Dev Group	service.dev.group	group
+Service Framework Part	service.framework.part	part
+Service Monitoring & Quality Part	service.monitoring..quality.part	part
+Service Operation Group	service.operation.group	group
+Service Operations Group	service.operations.group	group
+Service operation Group	service.operation.group	group
+Solution Quality Part	solution.quality.part	part
+Special Product Part	special.product.part	part
+Streaming Part	streaming.part	part
+Supply Part	supply.part	part
+Supply Service Group	supply.service.group	group
+System Architecture Part	system.architecture.part	part
+System Framework Part	system.framework.part	part
+System Platform & Drivers Part	system.platform..drivers.part	part
+System S/W Group	system.s.w.group	group
+TV Product Group	tv.product.group	group
+Talent & Org. Culture	talent..org.culture	
+Talent Acquisition	talent.acquisition	
+Talent Development	talent.development	
+Talent Management	talent.management	
+Tech Consulting & Presales  Part	tech.consulting..presales.part	part
+Tech Innovation Part	tech.innovation.part	part
+VD Product Quality Part	vd.product.quality.part	part
+VX Services Part	vx.services.part	part
+Value Creation Part	value.creation.part	part
+Voice Solutions Part	voice.solutions.part	part
+Web Tech part	web.tech.part	part
+Workplace Solution	workplace.solution	

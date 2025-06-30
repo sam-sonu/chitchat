@@ -1,0 +1,144 @@
+Comparison Results (Title Only):
+Total projects in old file: 137
+Total projects in new file: 135
+Common projects count: 115
+New projects count: 20
+
+Common Projects (Titles):
+ACR Data Processing Part
+AV Core Part
+AV Product Group
+AV Solutions Part
+AdOps Part
+AdOps Service Group
+Advance S/W Group
+Application Quality Group
+Application S/W Team
+Base Platform Part
+BigData Processing Part
+Broadcast MW Part
+Business Management Group
+CAS Part
+CTO Team
+Cloud Infra Part
+Cloud Platform Team
+Cloud Security Part
+Cloud Service Team
+Cognitive Solution Group
+Computing Solutions Part
+Connectivity Part
+Content Assets Services Part
+Content Discovery Services Part
+Content Engineering Part
+Content Streaming Services Part
+Convergence S/W Group
+Core S/W Group
+DA Mobile SW Part
+DA Product Apps Part
+DA Product Quality Part
+DA RT Middleware Part
+DA RT Product Part
+DA Service Apps Part
+DA Solutions Group
+Data Platform Group
+Data Visualization Part
+Device Feature Services Part
+Device Intelligence Group
+Device Solutions Group
+Echo System Part
+Enterprise Applications Part
+Enterprise Platform Group
+Enterprise Product Group
+Enterprise S/W Team
+Enterprise Server Solutions Part
+Enterprise Solutions Group
+Enterprise Tech. Consulting & Pre-Sales Part
+F&A
+Feature Quality Part
+Front Platform Part
+Graphics Part
+Hospitality Part
+IOT Middleware Part
+IOT-SmartThings Part
+IP & Strategy Part
+ISD
+Information Security
+Infra & Security Group
+Intelligence S/W Team
+Inventory Management
+Legal & Compliance
+Licensing Part
+Local & Emerging Services Part
+MDE Part
+MFI-DA Part
+MFI-VD Part
+New Biz Solutions Part
+OS & System MW Part
+PMO Part
+PVOD Part
+People Group
+People Services
+Platform Dev Group
+Platform Quality Part
+Platform S/W Team
+Process Innovation Part
+Procurement
+Product Intelligence Part
+Product Quality Group
+Product S/W Team
+QA & Training Part
+Quality Innovation Part
+R&D Strategy Group
+RTL IP Design & Verification Part
+Release Engineering Part
+Robot Apps Part
+Robotics Part
+S/W Quality Team
+SE Group
+Security Part
+Service Dev Group
+Service Framework Part
+Service Monitoring & Quality Part
+Service Operation Group
+Solution Quality Part
+Special Product Part
+Streaming Part
+Supply Part
+Supply Service Group
+System Architecture Part
+System Framework Part
+System Platform & Drivers Part
+System S/W Group
+TV Product Group
+Talent Acquisition
+Talent Development
+Talent Management
+Tech Innovation Part
+VD Product Quality Part
+VX Services Part
+Value Creation Part
+Voice Solutions Part
+Web Tech part
+Workplace Solution
+
+New Projects (Titles):
+AI Assistants Part
+Ad Platform Shared Service Team
+Advance SW Group
+Cloud service Team
+Content Quality Part
+Enterprise Device Platform Part
+Enterprise OSU Part
+Family Hub
+Head Of R&D Center
+Intelligent Data Solutions Part
+International Assignment(VD)
+Kitchen AI Part
+People Partners - Business
+Product S/W R&D Lab
+Reliability Engineering Part
+Samsung R&D Institute India - Delhi [IA Home]
+Screen Experience Part
+Sensing AI Part
+Service Operations Group
+Talent & Org. Culture

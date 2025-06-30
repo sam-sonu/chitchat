@@ -1,0 +1,652 @@
+PROJECT MEMBER MAPPING REPORT
+=============================
+Generated on: 2025-06-25 11:39:38
+
+SUMMARY STATISTICS
+------------------
+Total members processed: 1843
+Total projects affected: 127
+Total PL existing: 101
+Total PL to insert: 0
+Total Engg existing: 1703
+Total Engg to insert: 39
+Total skipped (existing): 1804
+
+PROJECT DETAILS
+---------------
+Project ID: 40 (AdOps Part)
+  Total members: 31
+  PL count: 1
+  Engg count: 30
+
+Project ID: 378 (CAS Part)
+  Total members: 34
+  PL count: 1
+  Engg count: 33
+
+Project ID: 361 (Supply Part)
+  Total members: 19
+  PL count: 1
+  Engg count: 18
+
+Project ID: 362 (QA & Training Part)
+  Total members: 32
+  PL count: 0
+  Engg count: 32
+
+Project ID: 34 (Supply Service Group)
+  Total members: 6
+  PL count: 1
+  Engg count: 5
+
+Project ID: 356 (Robot Apps Part)
+  Total members: 13
+  PL count: 1
+  Engg count: 12
+
+Project ID: 377 (DA Service Apps Part)
+  Total members: 28
+  PL count: 1
+  Engg count: 27
+
+Project ID: 54 (DA RT Product Part)
+  Total members: 23
+  PL count: 1
+  Engg count: 22
+
+Project ID: 55 (DA Mobile SW Part)
+  Total members: 18
+  PL count: 1
+  Engg count: 17
+
+Project ID: 357 (DA Product Apps Part)
+  Total members: 22
+  PL count: 1
+  Engg count: 21
+
+Project ID: 358 (DA RT Middleware Part)
+  Total members: 13
+  PL count: 1
+  Engg count: 12
+
+Project ID: 45 (BigData Processing Part)
+  Total members: 35
+  PL count: 1
+  Engg count: 34
+
+Project ID: 58 (Data Visualization Part)
+  Total members: 21
+  PL count: 1
+  Engg count: 20
+
+Project ID: 52 (Content Streaming Services Part)
+  Total members: 28
+  PL count: 1
+  Engg count: 27
+
+Project ID: 59 (Device Feature Services Part)
+  Total members: 35
+  PL count: 1
+  Engg count: 34
+
+Project ID: 360 (Content Assets Services Part)
+  Total members: 20
+  PL count: 1
+  Engg count: 19
+
+Project ID: 27 (Enterprise Solutions Group)
+  Total members: 2
+  PL count: 1
+  Engg count: 1
+
+Project ID: 61 (Enterprise Applications Part)
+  Total members: 21
+  PL count: 1
+  Engg count: 20
+
+Project ID: 64 (Enterprise Tech. Consulting & Pre-Sales Part)
+  Total members: 16
+  PL count: 1
+  Engg count: 15
+
+Project ID: 195 (Enterprise Device Platform Part)
+  Total members: 23
+  PL count: 2
+  Engg count: 21
+
+Project ID: 395 (AI Assistants Part)
+  Total members: 35
+  PL count: 0
+  Engg count: 35
+
+Project ID: 408 (Screen Experience Part)
+  Total members: 29
+  PL count: 0
+  Engg count: 29
+
+Project ID: 403 (Kitchen AI Part)
+  Total members: 16
+  PL count: 0
+  Engg count: 16
+
+Project ID: 23 (Device Intelligence Group)
+  Total members: 2
+  PL count: 1
+  Engg count: 1
+
+Project ID: 106 (VX Services Part)
+  Total members: 35
+  PL count: 1
+  Engg count: 34
+
+Project ID: 401 (Intelligent Data Solutions Part)
+  Total members: 19
+  PL count: 0
+  Engg count: 19
+
+Project ID: 99 (Streaming Part)
+  Total members: 22
+  PL count: 1
+  Engg count: 21
+
+Project ID: 367 (Broadcast MW Part)
+  Total members: 13
+  PL count: 1
+  Engg count: 12
+
+Project ID: 85 (Security Part)
+  Total members: 15
+  PL count: 1
+  Engg count: 14
+
+Project ID: 76 (Licensing Part)
+  Total members: 12
+  PL count: 1
+  Engg count: 11
+
+Project ID: 363 (System Framework Part)
+  Total members: 8
+  PL count: 1
+  Engg count: 7
+
+Project ID: 376 (System Architecture Part)
+  Total members: 26
+  PL count: 1
+  Engg count: 25
+
+Project ID: 364 (OS & System MW Part)
+  Total members: 23
+  PL count: 1
+  Engg count: 22
+
+Project ID: 100 (System Platform & Drivers Part)
+  Total members: 37
+  PL count: 1
+  Engg count: 36
+
+Project ID: 399 (Enterprise OSU Part)
+  Total members: 17
+  PL count: 0
+  Engg count: 17
+
+Project ID: 98 (Special Product Part)
+  Total members: 36
+  PL count: 0
+  Engg count: 36
+
+Project ID: 368 (Cloud Infra Part)
+  Total members: 30
+  PL count: 1
+  Engg count: 29
+
+Project ID: 369 (Cloud Security Part)
+  Total members: 11
+  PL count: 1
+  Engg count: 10
+
+Project ID: 70 (Hospitality Part)
+  Total members: 15
+  PL count: 1
+  Engg count: 14
+
+Project ID: 60 (Echo System Part)
+  Total members: 15
+  PL count: 1
+  Engg count: 14
+
+Project ID: 91 (Release Engineering Part)
+  Total members: 29
+  PL count: 1
+  Engg count: 28
+
+Project ID: 89 (Product Intelligence Part)
+  Total members: 55
+  PL count: 1
+  Engg count: 54
+
+Project ID: 10 (Application Quality Group)
+  Total members: 1
+  PL count: 0
+  Engg count: 1
+
+Project ID: 97 (Solution Quality Part)
+  Total members: 8
+  PL count: 1
+  Engg count: 7
+
+Project ID: 66 (Feature Quality Part)
+  Total members: 36
+  PL count: 1
+  Engg count: 35
+
+Project ID: 90 (Quality Innovation Part)
+  Total members: 21
+  PL count: 1
+  Engg count: 20
+
+Project ID: 36 (TV Product Group)
+  Total members: 3
+  PL count: 1
+  Engg count: 2
+
+Project ID: 56 (DA Product Quality Part)
+  Total members: 35
+  PL count: 1
+  Engg count: 34
+
+Project ID: 104 (VD Product Quality Part)
+  Total members: 53
+  PL count: 1
+  Engg count: 52
+
+Project ID: 84 (Platform Quality Part)
+  Total members: 61
+  PL count: 0
+  Engg count: 61
+
+Project ID: 19 (Convergence S/W Group)
+  Total members: 1
+  PL count: 1
+  Engg count: 0
+
+Project ID: 21 (DA Solutions Group)
+  Total members: 1
+  PL count: 1
+  Engg count: 0
+
+Project ID: 397 (Advance SW Group)
+  Total members: 1
+  PL count: 0
+  Engg count: 1
+
+Project ID: 353 (IOT-SmartThings Part)
+  Total members: 15
+  PL count: 0
+  Engg count: 15
+
+Project ID: 354 (MFI-DA Part)
+  Total members: 4
+  PL count: 1
+  Engg count: 3
+
+Project ID: 16 (Advance S/W Group)
+  Total members: 2
+  PL count: 0
+  Engg count: 2
+
+Project ID: 355 (MFI-VD Part)
+  Total members: 8
+  PL count: 1
+  Engg count: 7
+
+Project ID: 46 (New Biz Solutions Part)
+  Total members: 9
+  PL count: 1
+  Engg count: 8
+
+Project ID: 107 (Web Tech part)
+  Total members: 19
+  PL count: 1
+  Engg count: 18
+
+Project ID: 44 (Base Platform Part)
+  Total members: 32
+  PL count: 1
+  Engg count: 31
+
+Project ID: 49 (Content Discovery Services Part)
+  Total members: 21
+  PL count: 1
+  Engg count: 20
+
+Project ID: 359 (Local & Emerging Services Part)
+  Total members: 16
+  PL count: 1
+  Engg count: 15
+
+Project ID: 50 (Content Engineering Part)
+  Total members: 29
+  PL count: 1
+  Engg count: 28
+
+Project ID: 95 (Service Monitoring & Quality Part)
+  Total members: 26
+  PL count: 1
+  Engg count: 25
+
+Project ID: 406 (Reliability Engineering Part)
+  Total members: 17
+  PL count: 0
+  Engg count: 17
+
+Project ID: 398 (Content Quality Part)
+  Total members: 8
+  PL count: 0
+  Engg count: 8
+
+Project ID: 63 (Enterprise Server Solutions Part)
+  Total members: 20
+  PL count: 1
+  Engg count: 19
+
+Project ID: 409 (Sensing AI Part)
+  Total members: 18
+  PL count: 1
+  Engg count: 17
+
+Project ID: 67 (Front Platform Part)
+  Total members: 37
+  PL count: 0
+  Engg count: 37
+
+Project ID: 110 (Workplace Solution)
+  Total members: 2
+  PL count: 1
+  Engg count: 1
+
+Project ID: 411 (Talent & Org. Culture)
+  Total members: 1
+  PL count: 0
+  Engg count: 1
+
+Project ID: 82 (Talent Management)
+  Total members: 5
+  PL count: 1
+  Engg count: 4
+
+Project ID: 101 (Talent Development)
+  Total members: 2
+  PL count: 1
+  Engg count: 1
+
+Project ID: 83 (Talent Acquisition)
+  Total members: 5
+  PL count: 1
+  Engg count: 4
+
+Project ID: 404 (People Partners - Business)
+  Total members: 3
+  PL count: 0
+  Engg count: 3
+
+Project ID: 11 (CTO Team)
+  Total members: 4
+  PL count: 0
+  Engg count: 4
+
+Project ID: 6 (Platform S/W Team)
+  Total members: 3
+  PL count: 1
+  Engg count: 2
+
+Project ID: 113 (Information Security)
+  Total members: 2
+  PL count: 1
+  Engg count: 1
+
+Project ID: 112 (People Services)
+  Total members: 7
+  PL count: 1
+  Engg count: 6
+
+Project ID: 26 (Enterprise Product Group)
+  Total members: 1
+  PL count: 1
+  Engg count: 0
+
+Project ID: 24 (Device Solutions Group)
+  Total members: 1
+  PL count: 1
+  Engg count: 0
+
+Project ID: 17 (AV Product Group)
+  Total members: 1
+  PL count: 1
+  Engg count: 0
+
+Project ID: 42 (AV Core Part)
+  Total members: 24
+  PL count: 1
+  Engg count: 23
+
+Project ID: 400 (Family Hub)
+  Total members: 1
+  PL count: 0
+  Engg count: 1
+
+Project ID: 365 (Business Management Group)
+  Total members: 1
+  PL count: 0
+  Engg count: 1
+
+Project ID: 407 (Samsung R&D Institute India - Delhi [IA Home])
+  Total members: 2
+  PL count: 0
+  Engg count: 2
+
+Project ID: 3 (Application S/W Team)
+  Total members: 2
+  PL count: 1
+  Engg count: 1
+
+Project ID: 13 (People Group)
+  Total members: 2
+  PL count: 2
+  Engg count: 0
+
+Project ID: 392 (S/W Quality Team)
+  Total members: 2
+  PL count: 1
+  Engg count: 1
+
+Project ID: 8 (Cloud Platform Team)
+  Total members: 3
+  PL count: 1
+  Engg count: 2
+
+Project ID: 4 (Product S/W Team)
+  Total members: 1
+  PL count: 1
+  Engg count: 0
+
+Project ID: 396 (Ad Platform Shared Service Team)
+  Total members: 1
+  PL count: 0
+  Engg count: 1
+
+Project ID: 9 (Enterprise S/W Team)
+  Total members: 1
+  PL count: 1
+  Engg count: 0
+
+Project ID: 12 (Cloud Service Team)
+  Total members: 1
+  PL count: 1
+  Engg count: 0
+
+Project ID: 78 (MDE Part)
+  Total members: 22
+  PL count: 1
+  Engg count: 21
+
+Project ID: 72 (IOT Middleware Part)
+  Total members: 12
+  PL count: 1
+  Engg count: 11
+
+Project ID: 48 (Connectivity Part)
+  Total members: 30
+  PL count: 1
+  Engg count: 29
+
+Project ID: 65 (F&A)
+  Total members: 11
+  PL count: 1
+  Engg count: 10
+
+Project ID: 74 (ISD)
+  Total members: 6
+  PL count: 1
+  Engg count: 5
+
+Project ID: 88 (Procurement)
+  Total members: 9
+  PL count: 1
+  Engg count: 8
+
+Project ID: 75 (Legal & Compliance)
+  Total members: 3
+  PL count: 1
+  Engg count: 2
+
+Project ID: 71 (Inventory Management)
+  Total members: 3
+  PL count: 0
+  Engg count: 3
+
+Project ID: 18 (Cognitive Solution Group)
+  Total members: 1
+  PL count: 1
+  Engg count: 0
+
+Project ID: 92 (Robotics Part)
+  Total members: 21
+  PL count: 1
+  Engg count: 20
+
+Project ID: 20 (Core S/W Group)
+  Total members: 1
+  PL count: 1
+  Engg count: 0
+
+Project ID: 35 (System S/W Group)
+  Total members: 1
+  PL count: 1
+  Engg count: 0
+
+Project ID: 366 (Service Framework Part)
+  Total members: 11
+  PL count: 1
+  Engg count: 10
+
+Project ID: 94 (PVOD Part)
+  Total members: 8
+  PL count: 0
+  Engg count: 8
+
+Project ID: 69 (Graphics Part)
+  Total members: 32
+  PL count: 1
+  Engg count: 31
+
+Project ID: 43 (AV Solutions Part)
+  Total members: 13
+  PL count: 0
+  Engg count: 13
+
+Project ID: 47 (Computing Solutions Part)
+  Total members: 47
+  PL count: 1
+  Engg count: 46
+
+Project ID: 93 (RTL IP Design & Verification Part)
+  Total members: 6
+  PL count: 1
+  Engg count: 5
+
+Project ID: 5 (Intelligence S/W Team)
+  Total members: 1
+  PL count: 1
+  Engg count: 0
+
+Project ID: 15 (AdOps Service Group)
+  Total members: 2
+  PL count: 0
+  Engg count: 2
+
+Project ID: 29 (Platform Dev Group)
+  Total members: 1
+  PL count: 1
+  Engg count: 0
+
+Project ID: 28 (Infra & Security Group)
+  Total members: 1
+  PL count: 1
+  Engg count: 0
+
+Project ID: 22 (Data Platform Group)
+  Total members: 1
+  PL count: 1
+  Engg count: 0
+
+Project ID: 38 (ACR Data Processing Part)
+  Total members: 22
+  PL count: 1
+  Engg count: 21
+
+Project ID: 32 (Service Dev Group)
+  Total members: 1
+  PL count: 1
+  Engg count: 0
+
+Project ID: 33 (Service Operation Group)
+  Total members: 1
+  PL count: 1
+  Engg count: 0
+
+Project ID: 73 (IP & Strategy Part)
+  Total members: 7
+  PL count: 1
+  Engg count: 6
+
+Project ID: 102 (Tech Innovation Part)
+  Total members: 8
+  PL count: 1
+  Engg count: 7
+
+Project ID: 87 (Process Innovation Part)
+  Total members: 11
+  PL count: 0
+  Engg count: 11
+
+Project ID: 86 (PMO Part)
+  Total members: 5
+  PL count: 1
+  Engg count: 4
+
+Project ID: 103 (Value Creation Part)
+  Total members: 23
+  PL count: 1
+  Engg count: 22
+
+Project ID: 25 (Enterprise Platform Group)
+  Total members: 1
+  PL count: 1
+  Engg count: 0
+
+Project ID: 105 (Voice Solutions Part)
+  Total members: 1
+  PL count: 0
+  Engg count: 1
+
+END OF REPORT

@@ -1,0 +1,131 @@
+Part Name	Employee Count
+-----------------------------
+ Platform S/W Team 	1
+ACR Data Processing Part	22
+AI Assistants Part	35
+AV Core Part	24
+AV Product Group	1
+AV Solutions Part	13
+Ad Platform Shared Service Team	1
+AdOps Part	31
+AdOps Service Group	2
+Advance S/W Group	2
+Advance SW Group	1
+Application Quality Group	1
+Application S/W Team	2
+Base Platform Part	32
+BigData Processing Part	35
+Broadcast MW Part	13
+Business Management Group	1
+CAS Part	34
+CTO Team	4
+Cloud Infra Part	30
+Cloud Platform Team	3
+Cloud Security Part	11
+Cloud Service Team	1
+Cognitive Solution Group	1
+Computing Solutions Part	47
+Connectivity Part	30
+Content Assets Services Part	20
+Content Discovery Services Part	21
+Content Engineering Part	29
+Content Quality Part	8
+Content Streaming Services Part	28
+Convergence S/W Group	1
+Core S/W Group	1
+DA Mobile SW Part	18
+DA Product Apps Part	22
+DA Product Quality Part	35
+DA RT Middleware Part	13
+DA RT Product Part	23
+DA Service Apps Part	28
+DA Solutions Group	1
+Data Platform Group	1
+Data Visualization Part	21
+Device Feature Services Part	35
+Device Intelligence Group	2
+Device Solutions Group	1
+Echo System Part	15
+Enterprise Applications Part	21
+Enterprise Device Platform Part	23
+Enterprise OSU Part	17
+Enterprise Platform Group	1
+Enterprise Product Group	1
+Enterprise S/W Team	1
+Enterprise Server Solutions Part	20
+Enterprise Solutions Group	2
+Enterprise Tech. Consulting & Pre-Sales Part	16
+F&A	11
+Family Hub	1
+Feature Quality Part	36
+Front Platform Part	37
+Graphics Part	32
+Head Of R&D Center	1
+Hospitality Part	15
+IOT Middleware Part	12
+IOT-SmartThings Part	15
+IP & Strategy Part	7
+ISD	6
+Information Security	2
+Infra & Security Group	1
+Intelligence S/W Team	1
+Intelligent Data Solutions Part	19
+Inventory Management	3
+Kitchen AI Part	16
+Legal & Compliance	3
+Licensing Part	12
+Local & Emerging Services Part	16
+MDE Part	22
+MFI-DA Part	4
+MFI-VD Part	8
+New Biz Solutions Part	9
+OS & System MW Part	23
+PMO Part	5
+PVOD Part	8
+People Group	2
+People Partners - Business	3
+People Services	7
+Platform Dev Group	1
+Platform Quality Part	61
+Platform S/W Team	2
+Process Innovation Part	11
+Procurement	9
+Product Intelligence Part	55
+Product S/W Team	1
+QA & Training Part	32
+Quality Innovation Part	21
+RTL IP Design & Verification Part	6
+Release Engineering Part	29
+Reliability Engineering Part	17
+Robot Apps Part	13
+Robotics Part	21
+S/W Quality Team	2
+Samsung R&D Institute India - Delhi [IA Home]	2
+Screen Experience Part	29
+Security Part	15
+Sensing AI Part	18
+Service Dev Group	1
+Service Framework Part	11
+Service Monitoring & Quality Part	26
+Service Operation Group	1
+Solution Quality Part	8
+Special Product Part	36
+Streaming Part	22
+Supply Part	19
+Supply Service Group	6
+System Architecture Part	26
+System Framework Part	8
+System Platform & Drivers Part	37
+System S/W Group	1
+TV Product Group	3
+Talent & Org. Culture	1
+Talent Acquisition	5
+Talent Development	2
+Talent Management	5
+Tech Innovation Part	8
+VD Product Quality Part	53
+VX Services Part	35
+Value Creation Part	23
+Voice Solutions Part	1
+Web Tech part	19
+Workplace Solution	2

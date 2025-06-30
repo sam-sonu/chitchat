@@ -1,0 +1,114 @@
+no 	Title	Skill	Profiency Level	Category	Type	Remaks	id	verified_yn
+1	Coaching and capability development	Coaching and capability development	Beginner to Intermediate	Behavioral & Leadership	Course Skill Up Guide		3962	N
+2	Coaching and capability development	Coaching and capability development	Intermediate to Advance	Behavioral & Leadership	Course Skill Up Guide		2939	N
+3	Coaching and capability development	Coaching and capability development	Advance to Expert	Behavioral & Leadership	Course Skill Up Guide		1916	N
+4	Coaching and capability development	Coaching and capability development	Expert to Master	Behavioral & Leadership	Course Skill Up Guide		893	N
+5	Decision making,Conflict management, Critical Thinking 	Decision making,Conflict management, Critical Thinking 	Intermediate to Advance	Behavioral & Leadership	Course Skill Up Guide			
+6	Decision making,Conflict management, Critical Thinking 	Decision making,Conflict management, Critical Thinking 	Advance to Expert	Behavioral & Leadership	Course Skill Up Guide			
+7	Decision making,Conflict management, Critical Thinking 	Decision making,Conflict management, Critical Thinking 	Beginner to Intermediate	Behavioral & Leadership	Course Skill Up Guide			
+8	Leadership	Leadership	Intermediate to Advance	Behavioral & Leadership	Course Skill Up Guide		2642	N
+9	Gen AI - Enterprise	Gen AI - Enterprise (core)	Beginner to Intermediate	Gen AI	Course Skill Up Guide			
+10	Gen AI - Enterprise (core)	Gen AI - Enterprise (core)	Intermediate to Advance	Gen AI	Course Skill Up Guide		4036	N
+11	GenAI - Cloud (core)	GenAI - Cloud (core)	Beginner to Intermediate	Gen AI	Course Skill Up Guide			
+12	GenAI - Cloud (core)	GenAI - Cloud (core)	Intermediate to Advance	Gen AI	Course Skill Up Guide			
+13	Gen AI (core)	Gen AI (core)	Beginner to Intermediate	Gen AI	Course Skill Up Guide		4007	N
+14	Gen AI (core)	Gen AI (core)	Intermediate to Advance	Gen AI	Course Skill Up Guide		4008	N
+15	GENERATIVE AI FOR EVERYONE	Generative AI	Beginner to Intermediate	Gen AI	Program			
+16	GENERATIVE AI FOR BUSINESS LEADERS	Generative AI	Beginner to Intermediate	Gen AI	Program			
+17	GENERATIVE AI IN HR	Generative AI	Beginner to Intermediate	Gen AI	Program			
+18	GENERATIVE AI for Software Quality Engineering	Generative AI	Beginner to Intermediate	Gen AI	Program			
+19	GENERATIVE AI | LEVEL 3	Generative AI	Advance to Expert	Gen AI	Program			
+20	GENERATIVE AI - SQA TRACK	Generative AI	Beginner to Intermediate	Gen AI	Program			
+21	TLC Session | Data Science: Best Practices	AI Models	Intermediate to Advance	Gen AI	Training	Confluence Access restriction		
+22	TLC -FUSION | AI ESSENTIALS 	Generative AI	Intermediate to Advance	Gen AI	Training	Confluence Access restriction		
+23	Robotics (core)	Robotics	Beginner to Intermediate	Platform	Course Skill Up Guide		4041	N
+24	Robotics (core)	Robotics	Intermediate to Advance	Platform	Course Skill Up Guide		4042	N
+25	Robotics (core)	Robotics	Learner to Beginner	Platform	Course Skill Up Guide		4043	N
+26	Tizen as a platform for Advance	Tizen as a platform	Intermediate to Advance	Platform	Course Skill Up Guide			
+27	Tizen as a platform for Intermediate	Tizen as a platform	Beginner to Intermediate	Platform	Course Skill Up Guide			
+28	Connectivity	Connectivity	Beginner to Intermediate	Platform	Course Skill Up Guide			
+29	Connectivity	Connectivity	Intermediate to Advance	Platform	Course Skill Up Guide			
+30	Audio	Audio	Beginner to Intermediate	Platform	Course Skill Up Guide			
+31	Audio	Audio	Intermediate to Advance	Platform	Course Skill Up Guide			
+32	Video	Video	Beginner to Intermediate	Platform	Course Skill Up Guide			
+33	Video	Video	Intermediate to Advance	Platform	Course Skill Up Guide			
+34	Convergence (core)	Convergence (core)	Intermediate to Advance	Platform	Course Skill Up Guide		4026	N
+35	Flutter  for Intermediate	Flutter	Beginner to Intermediate	Platform	Course Skill Up Guide			
+36	Dart  for Intermediate	Dart	Beginner to Intermediate	Platform	Course Skill Up Guide			
+37	Edje(EFL) for Intermediate	Edje(EFL)	Beginner to Intermediate	Platform	Course Skill Up Guide			
+38	Commercialization - 2025- Other GRC's - Day-1 - Part 1 (Commercialization PROCESS )	Commercialization PROCESS	Intermediate to Advance	Platform	Program			
+39	Commercialization - 2025- Other GRC's - Day-1 - Part 2 (SW Quality)	SW Quality	Advance to Expert	Platform	Program			
+40	Commercialization - 2025- Other GRC's - Day-2 - Part 1 (Performance)	Performance	Intermediate to Advance	Platform	Program			
+41	TLC | Evolution of Multimedia Streaming & Emerging Technologies	Streaming Services	Intermediate to Advance	Platform	Training	Confluence Access restriction		
+42	Performance Improvement Techniques for App. on Tizen Platform	Performance Monitoring and Improvement	Intermediate to Advance	Platform	Training	Confluence Access restriction		
+43	Data & Privacy Security in C++/Java Code (ISO Certification Standards) 	Security for Connected Device	Intermediate to Advance	Platform	Training	Confluence Access restriction		
+44	Robotics Fundamentals: A Comprehensive Training - Part 1	Robotics	Intermediate to Advance	Platform	Training	Confluence Access restriction		
+45	Introduction ROBOT OPERATING SYSTEM (An Autonomous Mobile System Framework) SESSION-1 	Robotics	Intermediate to Advance	Platform	Training			
+46	RISCV- Open Instruction Set Architecture	CPU Architecture (ARM / RISCV)	Intermediate to Advance	Platform	Training			
+47	WhiteRose (Unified Tool for TV Automation)	Whiterose	Intermediate to Advance	Platform	Training			
+48	Large Scale Content Services Architecture	Large Scale Content Services Architecture	Beginner to Intermediate	Server	Course Skill Up Guide			
+49	Large Scale Content Services Architecture	Large Scale Content Services Architecture	Intermediate to Advance	Server	Course Skill Up Guide			
+50	Data Engineering	Data Engineering	Beginner to Intermediate	Server	Course Skill Up Guide			
+51	AWS ECS, Fargate	AWS Basics	Intermediate to Advance	Server	Course Skill Up Guide		2420	N
+52	AWS ECS, Fargate	AWS Basics	Beginner to Intermediate	Server	Course Skill Up Guide		3443	N
+53	AWS Lambda for Advance	AWS Lambda	Intermediate to Advance	Server	Course Skill Up Guide			
+54	AWS Lambda  for Intermediate	AWS Lambda	Beginner to Intermediate	Server	Course Skill Up Guide			
+55	AWS Lambda for Master	AWS Lambda	Expert to Master	Server	Course Skill Up Guide			
+56	AWS Lambda for Expert	AWS Lambda	Expert to Master	Server	Course Skill Up Guide			
+57	Java  for Expert	Java	Advance to Expert	Server	Course Skill Up Guide			
+58	Java for Advance	Java	Intermediate to Advance	Server	Course Skill Up Guide			
+59	Java  for Intermediate	Java	Beginner to Intermediate	Server	Course Skill Up Guide			
+60	Java Script  for Intermediate	Java Script	Beginner to Intermediate	Server	Course Skill Up Guide			
+61	Java Script for Advance	Java Script	Intermediate to Advance	Server	Course Skill Up Guide			
+62	Java-SpringBoot for Advance	Java-SpringBoot	Intermediate to Advance	Server	Course Skill Up Guide			
+63	Java-SpringBoot  for Intermediate	Java-SpringBoot	Beginner to Intermediate	Server	Course Skill Up Guide			
+64	Java-SpringBoot  for Expert	Java-SpringBoot	Advance to Expert	Server	Course Skill Up Guide			
+65	Python for Master	Python	Expert to Master	Server	Course Skill Up Guide			
+66	Python  for Expert	Python	Advance to Expert	Server	Course Skill Up Guide			
+67	Python for Advance	Python	Intermediate to Advance	Server	Course Skill Up Guide			
+68	Python  for Intermediate	Python	Beginner to Intermediate	Server	Course Skill Up Guide			
+69	ReactJS  for Intermediate	ReactJS	Beginner to Intermediate	Server	Course Skill Up Guide			
+70	ReactJS  for Expert	ReactJS	Advance to Expert	Server	Course Skill Up Guide			
+71	AWS Cloud Watch	AWS Cloud Watch	Beginner to Intermediate	Server	Course Skill Up Guide		3435	N
+72	AWS Cloud Watch	AWS Cloud Watch	Intermediate to Advance	Server	Course Skill Up Guide		2412	N
+73	AWS Cloud Watch	AWS Cloud Watch	Advance to Expert	Server	Course Skill Up Guide		1389	N
+74	AWS EC2	AWS EC2	Beginner to Intermediate	Server	Course Skill Up Guide		3442	N
+75	AWS EC2	AWS EC2	Intermediate to Advance	Server	Course Skill Up Guide		2419	N
+76	AWS EC2	AWS EC2	Advance to Expert	Server	Course Skill Up Guide		1396	N
+77	Core Competency Data Engineering (Python/Scala & Hadoop Map Reduce)	Data Engineering	Intermediate to Advance	Server	Program			
+78	[L1->L2] Frontend Engineer Track	Frontend	Beginner to Intermediate	Server	Program			
+79	 [L2-L3] Service Development Engineering Track		Intermediate to Advance	Server	Program			
+80	[L1->L2] Service Quality Engineer Track		Beginner to Intermediate	Server	Program			
+81	AWS Associate Architect (SAA-C03) Training - CPT	Cloud Certificatoin	Intermediate to Advance	Server	Program			
+82	 [L1->L2] Service Monitoring Engineer Track	Service Monitoring	Beginner to Intermediate	Server	Program			
+83	 [L1->L2] Content Operation Engineer Track	Operation	Beginner to Intermediate	Server	Program			
+84	 [L1->L2] Content Curation Engineer Track	Operation	Beginner to Intermediate	Server	Program			
+85	 [L1->L2] Data Engineer Track	Data Engineering	Beginner to Intermediate	Server	Program			
+86	L1->L2] Infra Engineering Track	Large Scale Content Services Architecture 	Beginner to Intermediate	Server	Program			
+87	[L1->L2] Backend Engineering Track	Large Scale Content Services Architecture 	Beginner to Intermediate	Server	Program			
+88	Crash Course - AWS Associate Architect (SAA-C03) Certification	Cloud Certificatoin	Intermediate to Advance	Server	Program			
+89	GCP Professional Data Engineer	Cloud Certificatoin	Advance to Expert	Server	Program			
+90	TLC | Cloud Infra Automation : Infra as Code with AWS CDK	AWS Cloud Watch & Infra	Intermediate to Advance	Server	Training	Confluence Access restriction		
+91	AWS: Log Processing & Analytics	AWS Basics	Advance to Expert	Server	Training			
+92	Application Performance Monitoring	Performance Monitoring and Improvement	Intermediate to Advance	Server	Training			
+93	Apache Airflow & AWS MWAA Training	AWS AirFlow (Work Flow Management)	Intermediate to Advance	Server	Training			
+94	TLC | Web Development: Angular Overview, Web Techniques	Web Debugging Skills	Beginner to Intermediate	Server	Training	Confluence Access restriction		
+95	C#, .Net  for Intermediate	C#, .Net	Beginner to Intermediate	SW Engineering & Tool	Course Skill Up Guide			
+96	C++  for Expert	C++	Advance to Expert	SW Engineering & Tool	Course Skill Up Guide			
+97	C++  for Advance	C++	Intermediate to Advance	SW Engineering & Tool	Course Skill Up Guide			
+98	C++  for Intermediate	C++	Beginner to Intermediate	SW Engineering & Tool	Course Skill Up Guide			
+99	Code review  for Advance	Code review	Intermediate to Advance	SW Engineering & Tool	Course Skill Up Guide			
+100	Reporting and Data Analytics (Excel, tableau) for Advance	Reporting and Data Analytics (Excel, tableau)	Intermediate to Advance	SW Engineering & Tool	Course Skill Up Guide			
+101	About Lumos	Lumos	Beginner to Intermediate	SW Engineering & Tool	Training			
+102	BTS Test Automation	BTS Test Automation	Beginner to Intermediate	Testing & QA	Course Skill Up Guide	broken link, but opening	3492	N
+103	BTS Test Automation	BTS Test Automation	Intermediate to Advance	Testing & QA	Course Skill Up Guide	broken link, but opening	2469	N
+104	OSU Test Methodology	Quality Methodology (QA)	Beginner to Intermediate	Testing & QA	Training	broken link, but opening		
+105	SW Market Issues Analysis	Quality Assurance & Review	Intermediate to Advance	Testing & QA	Training	Confluence Access restriction		
+106	New Model Introduction & Demonstration	Quality Assurance & Review	Learner to Beginner	Testing & QA	Training	Confluence Access restriction		
+107	OSU Postmortem	Quality Assurance & Review	Intermediate to Advance	Testing & QA	Training			
+108	Global New Model Strategy	Quality Assurance & Review	Learner to Beginner	Testing & QA	Training			
+109	GPUT : Global Power User Test	Quality Assurance & Review	Advance to Expert	Testing & QA	Training			
+110	Performance Evaluation Methodology	Quality Assurance & Review	Advance to Expert	Testing & QA	Training	broken link, but opening		
+111	OSU Verification Method Establishment	Quality Assurance & Review	Advance to Expert	Testing & QA	Training	Confluence will be updated by QA		
+112	Global SWQA Postmortem WorkShop	Quality Assurance & Review	Intermediate to Advance	Testing & QA	Training			
+113	ESS Readiness	Quality Assurance & Review	Intermediate to Advance	Testing & QA	Training			

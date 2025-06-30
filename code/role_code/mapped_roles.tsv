@@ -1,0 +1,9 @@
+roleName
+""
+Expat   - > user.role.expat
+Group Head   - > user.role.partlead
+HR Admin - user.role.hradmin
+MD    - > user.role.md
+Part Lead  - > user.role.partlead
+Super Admin   - user.role.engg , user.role.pl
+Team Head   - > user.role.teamhead
